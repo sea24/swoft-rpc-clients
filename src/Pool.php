@@ -27,7 +27,7 @@ class Pool extends AbstractPool
             throw new RpcClientException(
                 sprintf('Pool(%s) client can not be null!', __CLASS__)
             );
-        }
+        } 
         return   $this->client->createConnection($this);
     }
 }
